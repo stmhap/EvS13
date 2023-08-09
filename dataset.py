@@ -167,9 +167,9 @@ def test():
     transform = config.train_transforms
 
     dataset = YOLODataset(
-        "../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC/train.csv",
-        "../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC/images/",
-        "../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC/labels/",
+        "../../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC/train.csv",
+        "../../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC/images/",
+        "../../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC/labels/",
         S=[13, 26, 52],
         anchors=anchors,
         transform=transform,
