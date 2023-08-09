@@ -29,7 +29,7 @@ def get_device():
     return device
 
 
-DATASET = 'PASCAL_VOC'
+DATASET = '../input/pascal-voc-dataset-used-in-yolov3-video/PASCAL_VOC'
 DEVICE = get_device()
 ACTIVATION = 'relu'
 seed_everything()  # If you want deterministic behavior
