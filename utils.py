@@ -472,7 +472,8 @@ class ResizeDataLoader(DataLoader):
         for x, y in gen:
             if self.resizers is not None and len(self.resizers) > 1:
                 resizer = random.choices(self.resizers, cum_weights=self.cum_weights, k=1)[0]
-                x = resizer(x)
+                if resizer.size != x.shape[2]:
+                    x = resizer(x)
             yield x, y
 
 
